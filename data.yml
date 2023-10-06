@@ -26,10 +26,34 @@ locations:
       "3":
         database: PC_COALESCE_DB
         schema: INFORMATION_SCHEMA
-macros: {}
+macros:
+  Macro-1:
+    id: "1"
+    macroString: |
+      {%- macro even_odd(column) -%}
+          CASE WHEN MOD({{ column }}, 2) = 0 THEN '2' ELSE '1' END
+      {%- endmacro %}
 packages: {}
 projects: {}
 stepTypes:
+  StepType-1:
+    id: "1"
+    isDisabled: false
+    metadata:
+      defaultStorageLocation: null
+      error: null
+      nodeMetadataSpec: |-
+        capitalized: New Type
+        short: NEW
+        tagColor: '#FFF00'
+        plural: New Types
+      templates:
+        create:
+          templateString: ""
+        run:
+          templateString: ""
+    name: UDN_
+    version: 1
   StepType-Dimension:
     id: Dimension
     isDisabled: false

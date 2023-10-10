@@ -2,6 +2,22 @@ defaultStorageMapping: TARGET
 installedPackages: {}
 jobs: {}
 locations:
+  NOSTARGET:
+    mappingDefinitions:
+      "2":
+        database: NOSTROMO_TARGET
+        schema: NOSTARGET
+      "3":
+        database: NOSTROMO_TARGET
+        schema: NOSTARGET
+  NOSTROMO:
+    mappingDefinitions:
+      "2":
+        database: EXAMPLE_NOSTROMO
+        schema: NOSTROMO
+      "3":
+        database: EXAMPLE_NOSTROMO
+        schema: NOSTROMO
   SAMPLE:
     mappingDefinitions:
       "2":

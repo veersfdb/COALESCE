@@ -1,0 +1,94 @@
+steps:
+  NOSTROMO_SRC2-38a818bd-466d-44fb-b807-ec9a93506c9b:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: NOSTROMO
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 66635998-5a44-4e7d-a603-22687c1ca23d
+              stepCounter: 38a818bd-466d-44fb-b807-ec9a93506c9b
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: N_CREWKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: caa8b474-0595-4ac9-8c38-9e6d301abd46
+              stepCounter: 38a818bd-466d-44fb-b807-ec9a93506c9b
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: N_FIRSTNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d0f31260-40f7-4b83-aa80-1b7eb5623656
+              stepCounter: 38a818bd-466d-44fb-b807-ec9a93506c9b
+            config: {}
+            dataType: VARCHAR(1)
+            defaultValue: ""
+            description: ""
+            name: N_MIDDLEINITIAL
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7ce5987f-b0b7-40f2-95ad-b8dd933b495b
+              stepCounter: 38a818bd-466d-44fb-b807-ec9a93506c9b
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: N_LASTNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0fe9e7d8-f536-4b19-8b9a-6532daa89136
+              stepCounter: 38a818bd-466d-44fb-b807-ec9a93506c9b
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: N_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('NOSTROMO', 'NOSTROMO_SRC2') }}
+      name: NOSTROMO_SRC2
+      schema: ""
+      sqlType: Source
+      table: NOSTROMO_SRC2
+      type: sourceInput
+    stepCounter: 38a818bd-466d-44fb-b807-ec9a93506c9b
